@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btnAddContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ADD"
+            android:drawableLeft="@mipmap/daco"
+            android:layout_margin="5dp"
+            android:onClick="addContact"></Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openCallLog"
+            android:id="@+id/btnCallLog"
+            android:drawableLeft="@mipmap/phonecall"
+            android:text="Log"
+            android:layout_weight="1"
+            android:layout_margin="5dp">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openSmsLog"
+            android:drawableLeft="@mipmap/rectangularsms"
+            android:id="@+id/btnSmsLog"
+            android:text="Log"
+            android:layout_weight="1"
+            android:layout_margin="5dp">
+        </Button>
+        <Button
+            android:id="@+id/btnContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Syn"
+            android:drawableLeft="@mipmap/syn"
+            android:onClick="synContact"
+            android:layout_margin="5dp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstContactList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

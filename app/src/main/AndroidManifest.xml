@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.contactmanagerassigment">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/contact"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/contact"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ContactManagerAssigment">
+        <activity
+            android:name=".Login_Details_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Add_Contact_Activity"></activity>
+        <activity android:name=".Sms_Log_Activity"></activity>
+        <activity android:name=".Call_Log_Activity"></activity>
+        <activity android:name=".Edit_Contactlist_Activity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".NewUser_Activity"></activity>
+    </application>
+
+</manifest>
